@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="ok">
+        <label for="exampleInputPassword1" class="form-label">Username</label>
+        <input type="text" class="form-control" id="Username">
+      
+      
+        <label for="exampleInputPassword1" class="form-label">Contact</label>
+        <input type="text" class="form-control" id="contact">
+   
+        <label for="exampleInputPassword1" class="form-label">Address</label>
+        <input type="text" class="form-control" id="Address">
+  
+    
+        <button class="button" onclick="this.classList.toggle('button--loading')">
+            <span class="button__text">Add</span></button>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+     const firebaseConfig = {
+  apiKey: "AIzaSyAP8sD52qc5etmJ4DS1DzFe2MaDFGKb_-k",
+  authDomain: "fire-database-982e9.firebaseapp.com",
+  databaseURL: "https://fire-database-982e9-default-rtdb.firebaseio.com",
+  projectId: "fire-database-982e9",
+  storageBucket: "fire-database-982e9.appspot.com",
+  messagingSenderId: "479339549973",
+  appId: "1:479339549973:web:f7e6c949e23fee91c1451c",
+  measurementId: "G-BV3MTKS1DC"
+};
+firebase.initializeApp(firebaseConfig)
+    </script> 
+    <script src="add_contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+<div class="ok">
+<h3>Login here</h3>
+  <label for="email">email</label>
+  <input type="text" placeholder="Email or Phone" id="email1">
+
+  <label for="password">Password</label>
+  <input type="password" placeholder="Password" id="password1">
+   <button id="login"  class="button" onclick="this.classList.toggle('button--loading')">
+      <span class="button__text">Log In</span></button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyAP8sD52qc5etmJ4DS1DzFe2MaDFGKb_-k",
+  authDomain: "fire-database-982e9.firebaseapp.com",
+  databaseURL: "https://fire-database-982e9-default-rtdb.firebaseio.com",
+  projectId: "fire-database-982e9",
+  storageBucket: "fire-database-982e9.appspot.com",
+  messagingSenderId: "479339549973",
+  appId: "1:479339549973:web:f7e6c949e23fee91c1451c",
+  measurementId: "G-BV3MTKS1DC"
+};
+firebase.initializeApp(firebaseConfig)
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>
